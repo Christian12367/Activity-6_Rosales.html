@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Creative Portfolio</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Arial, Helvetica, sans-serif; background: #eef1f5; color: #222; }
+
+    /* Navigation bar */
+    nav { background: #1f2933; display: flex; justify-content: center; }
+    nav a { color: #cbd2d9; text-decoration: none; padding: 16px 28px; font-weight: bold; }
+    nav a:hover { background: #323f4b; color: #fff; }
+    nav a.active { background: #000; color: #fff; border-bottom: 4px solid #3ea6ff; }
+
+    /* Portfolio card */
+    .card {
+      max-width: 900px; margin: 40px auto; padding: 36px 24px;
+      background: #fff; border-radius: 12px; text-align: center;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+    }
+    .card h1 { font-size: 2.2rem; margin-bottom: 8px; }
+    .card p.tagline { color: #52606d; margin-bottom: 28px; }
+
+    /* 12 circular images in a grid */
+    .grid {
+      display: grid; grid-template-columns: repeat(4, 1fr);
+      gap: 28px 20px; justify-items: center; margin-bottom: 32px;
+    }
+    .item figure { text-align: center; }
+    .item img {
+      width: 140px; height: 140px; object-fit: cover;
+      border-radius: 50%; border: 5px solid #161616;
+      display: block; margin: 0 auto 8px;
+    }
+    .item figcaption { font-size: 0.9rem; color: #323f4b; }
+
+    /* Call-to-action */
+    .cta {
+      display: inline-block; background: #000000; color: #fff;
+      text-decoration: none; font-weight: bold; padding: 14px 34px;
+      border-radius: 30px;
+    }
+    .cta:hover { background: #f7f9fa; }
+
+    /* Responsive */
+    @media (max-width: 768px) { .grid { grid-template-columns: repeat(3, 1fr); } }
+    @media (max-width: 520px) {
+      .grid { grid-template-columns: repeat(2, 1fr); }
+      nav a { padding: 14px 16px; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="gallery.html" class="active">Gallery</a>
+  </nav>
+
+  <main class="card">
+    <h1>Creative Portfolio</h1>
+    <p class="tagline">A collection of my favorite works and moments.</p>
+
+    <section class="grid">
+      <div class="item"><figure><img src="Snowww.webp" alt="Work 1"><figcaption>Work 1</figcaption></figure></div>
+      <div class="item"><figure><img src="Lake.jpg" alt="Work 2"><figcaption>Work 2</figcaption></figure></div>
+      <div class="item"><figure><img src="Snow.jpg" alt="Work 3"><figcaption>Work 3</figcaption></figure></div>
+      <div class="item"><figure><img src="Pink trees.avif" alt="Work 4"><figcaption>Work 4</figcaption></figure></div>
+      <div class="item"><figure><img src="fields.jpg" alt="Work 5"><figcaption>Work 5</figcaption></figure></div>
+      <div class="item"><figure><img src="lavender-field-sunset-near-valensole_268835-3910.avif" alt="Work 6"><figcaption>Work 6</figcaption></figure></div>
+      <div class="item"><figure><img src="Sunset.webp" alt="Work 7"><figcaption>Work 7</figcaption></figure></div>
+      <div class="item"><figure><img src="sunset-tree-field-stockcake (1).jpg" alt="Work 8"><figcaption>Work 8</figcaption></figure></div>
+      <div class="item"><figure><img src="stunning-sunset-field-stockcake.jpg" alt="Work 9"><figcaption>Work 9</figcaption></figure></div>
+      <div class="item"><figure><img src="flowers.jpg" alt="Work 10"><figcaption>Work 10</figcaption></figure></div>
+      <div class="item"><figure><img src="Flower.webp" alt="Work 11"><figcaption>Work 11</figcaption></figure></div>
+      <div class="item"><figure><img src="nature-background-nature-wallpaper-extensive-rows-of-blooming-purple-lavender-fields-stretch-towards-a-vibrant-sunset-sky-with-colorful-clouds-free-photo.jpg" alt="Work 12"><figcaption>Work 12</figcaption></figure></div>
+    </section>
+
+    <a href="about.html" class="cta">Get to Know Me</a>
+  </main>
+
+</body>
+</html>
